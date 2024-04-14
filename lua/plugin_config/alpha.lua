@@ -31,8 +31,8 @@ dashboard.section.buttons.val =
 {
   dashboard.button("1", "󰥨 | Find File", ":lua require('telescope.builtin').find_files(); print('> look up...')<CR>"),
   dashboard.button("2", " | Recent Files", ":lua require('telescope.builtin').oldfiles(); print('> recent files...')<CR>"),
-  dashboard.button("3", "󱏒 | Tree", ":Triptych<cr>"),
-  dashboard.button("4", " | New File", ":ene <BAR> startinsert<CR>"),
+  dashboard.button("3", " | New File", ":ene <BAR> startinsert<CR>"),
+  dashboard.button("4", "󱏒 | Tree", ":Triptych<cr>"),
   dashboard.button("5", "󰗼 | Exit", ":qa<CR>"),
 }
 

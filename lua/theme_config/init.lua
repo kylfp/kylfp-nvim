@@ -1,3 +1,4 @@
-require 'theme_config.nightcity'
-require 'theme_config.ayu'
+require 'theme_config.kanagawa'
+-- require 'theme_config.nightcity'
+-- require 'theme_config.ayu'
 require 'theme_config.theme'

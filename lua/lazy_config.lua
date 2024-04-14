@@ -54,4 +54,5 @@ require("lazy").setup({
   'navarasu/onedark.nvim',                                                                    -- Onedark Theme
   'Mofiqul/vscode.nvim',                                                                      -- VS Code Theme
   'Shatur/neovim-ayu',                                                                        -- Ayu
+  'rebelot/kanagawa.nvim',
 })
