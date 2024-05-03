@@ -1,6 +1,6 @@
 require 'plugin_config.lsp'
 require 'plugin_config.cmp'
--- require 'plugin_config.completions' (Nvim Cmp)
+require 'plugin_config.completions'
 require 'plugin_config.lualine'
 require 'plugin_config.telescope'
 require 'plugin_config.bufdel'
@@ -9,5 +9,4 @@ require 'plugin_config.triptych'
 require 'plugin_config.mini'
 require 'plugin_config.alpha'
 require 'plugin_config.colorhighlights'
-require 'plugin_config.scrollbar'
 require 'plugin_config.virtcolumn'

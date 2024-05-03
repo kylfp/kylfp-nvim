@@ -32,7 +32,6 @@ require("lazy").setup({
   'chrisgrieser/cmp-nerdfont',                                                                -- Nerdfont Completions
   'hrsh7th/cmp-calc',                                                                         -- Comletion Calculations
 
-
   -- General
   { 'nvim-treesitter/nvim-treesitter', build = ":TSUpdate" },                                 -- Treesitter
   { 'nvim-telescope/telescope.nvim', tag = '0.1.2', dependencies = 'nvim-lua/plenary.nvim' }, -- Telescope
@@ -45,14 +44,14 @@ require("lazy").setup({
   { 'echasnovski/mini.nvim', version = false },                                               -- Mini (See plugin_config/mini.lua)
   'petertriho/nvim-scrollbar',                                                                -- Scrollbar
   'lukas-reineke/virt-column.nvim',                                                           -- Change colorcolumns to line
-  'sitiom/nvim-numbertoggle',                                                                 -- Toggle Relative vs Norm Numbers
 
   -- Color Themes
-  'folke/tokyonight.nvim',                                                                    -- Tokoynight Theme
-  'cryptomilk/nightcity.nvim',                                                                -- Nightcity Theme
-  'catppuccin/nvim',                                                                          -- Catppuccin Theme
+  -- 'folke/tokyonight.nvim',                                                                    -- Tokoynight Theme
+  -- 'cryptomilk/nightcity.nvim',                                                                -- Nightcity Theme
+  -- 'catppuccin/nvim',                                                                          -- Catppuccin Theme
   'navarasu/onedark.nvim',                                                                    -- Onedark Theme
-  'Mofiqul/vscode.nvim',                                                                      -- VS Code Theme
-  'Shatur/neovim-ayu',                                                                        -- Ayu
-  'rebelot/kanagawa.nvim',
+  -- 'Mofiqul/vscode.nvim',                                                                      -- VS Code Theme
+  -- 'Shatur/neovim-ayu',                                                                        -- Ayu
+  -- 'rebelot/kanagawa.nvim',                                                                    -- Kanagawa
+  -- 'rose-pine/neovim',                                                                         -- Rose Pine
 })

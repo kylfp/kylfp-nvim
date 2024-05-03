@@ -1,5 +1,5 @@
 local function arch()
-    return [[ ]]
+    return [[ ]]
 end
 
 local filenameSettings = {
@@ -60,9 +60,9 @@ require('lualine').setup {
     lualine_y = {},
     lualine_z = {}
   },
-  -- tabline = {
-  --   lualine_c = { bufferSettings }
-  -- },
+  tabline = {
+    lualine_c = { { 'filename', path = 1 }, }
+  },
   winbar = {},
   inactive_winbar = {},
   extensions = { 'nvim-tree', 'lazy', 'mason' }

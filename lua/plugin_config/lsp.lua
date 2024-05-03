@@ -7,7 +7,8 @@ require("mason-lspconfig").setup({
     "clangd",
     "tsserver",
     "eslint",
-    "cssls"
+    "cssls",
+    "emmet_language_server",
   }
 })
 
@@ -67,5 +68,9 @@ require("lspconfig").eslint.setup {
 }
 
 require("lspconfig").cssls.setup {
+  on_attach = on_attach
+}
+
+require("lspconfig").emmet_language_server.setup {
   on_attach = on_attach
 }
