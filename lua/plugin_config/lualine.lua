@@ -60,10 +60,10 @@ require('lualine').setup {
     lualine_y = {},
     lualine_z = {}
   },
-  tabline = {
-    lualine_c = { { 'filename', path = 1 }, }
-  },
-  winbar = {},
+  -- tabline = {
+  --   lualine_c = { { 'filename', path = 1 }, }
+  -- },
+  -- winbar = {},
   inactive_winbar = {},
   extensions = { 'nvim-tree', 'lazy', 'mason' }
 }

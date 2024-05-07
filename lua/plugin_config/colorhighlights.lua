@@ -1,4 +1,4 @@
-require("nvim-highlight-colors").setup {
-    render = {'background', first_column}, -- or 'foreground' or 'first_column'
+require('nvim-highlight-colors').setup {
+    render = 'background',
     enable_named_colors = true,
 }

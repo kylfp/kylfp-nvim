@@ -33,7 +33,9 @@ dashboard.section.buttons.val =
   dashboard.button("2", " | Recent Files", ":lua require('telescope.builtin').oldfiles(); print('> recent files...')<CR>"),
   dashboard.button("3", " | New File", ":ene <BAR> startinsert<CR>"),
   dashboard.button("4", "󱏒 | Tree", ":Triptych<cr>"),
-  dashboard.button("5", "󰗼 | Exit", ":qa<CR>"),
+  dashboard.button("5", "󰒲 | Lazy", ":Lazy<CR>"),
+  dashboard.button("6", " | Mason", ":Mason<CR>"),
+  dashboard.button("7", "󰗼 | Exit", ":qa<CR>"),
 }
 
 -- menu footer

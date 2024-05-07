@@ -45,25 +45,23 @@ keymap("v", ">", ">gv", opts)
 
 -- PLUGINS
 -- Telescope
-keymap("n", "<leader>1", ":Telescope find_files prompt_prefix=󰙅 hidden=true <cr>", opts)
-keymap("n", "<leader>2", ":Telescope buffers prompt_prefix=󱦞 hidden=true <cr>", opts)
-keymap("n", "<leader>8", ":Telescope live_grep prompt_prefix=󰭎 <cr>", opts)
-keymap("n", "<leader>0", ":Telescope current_buffer_fuzzy_find prompt_prefix= <cr>", opts)
+keymap("n", "<leader>1", ":Telescope find_files prompt_prefix=󰙅  hidden=true <CR>", opts)
+keymap("n", "<leader>2", ":Telescope buffers prompt_prefix=󱦞  hidden=true <CR>", opts)
+keymap("n", "<leader>8", ":Telescope live_grep prompt_prefix=󰭎  <CR>", opts)
+keymap("n", "<leader>0", ":Telescope current_buffer_fuzzy_find prompt_prefix=  <CR>", opts)
 
 -- Highlight Colors
-keymap('n', '<leader>hc', ':HighlightColors Toggle<cr>', opts)
+keymap('n', '<leader>hc', ':HighlightColors Toggle<CR>', opts)
 
 -- Triptych
-keymap("n", "<leader>4", ':Triptych<cr>', opts)
+keymap("n", "<leader>4", ':Triptych<CR>', opts)
 
 -- BufDel
-keymap('n', '<leader>q', ':BufDel<cr>', opts)
+keymap('n', '<leader>q', ':BufDel<CR>', opts)
 
 -- Spectre
-keymap('n', '<leader>9f', ':lua require("spectre").open_file_search({select_word=true})<cr>', opts) -- Search File for Current Word
-keymap('n', '<leader>7f', ':lua require("spectre").open_file_search()<cr>', opts)                  -- Search File General
-keymap('n', '<leader>9a', ':lua require("spectre").toggle({select_word=true})<cr>', opts)           -- Search Working Directory Current Word
-keymap('n', '<leader>7a', ':lua require("spectre").toggle()<cr>', opts)                            -- Search Working Directory General
+keymap('n', '<leader>9', ':lua require("spectre").open_file_search()<CR>', opts)                  -- Search File General
+keymap('n', '<leader>7', ':lua require("spectre").toggle()<CR>', opts)                            -- Search Working Directory General
 
 -- Mini
-keymap('n', '<leader>T', ':lua MiniTrailspace.trim()<cr>', opts) -- Remove all trailing whitespace
+keymap('n', '<leader>T', ':lua MiniTrailspace.trim()<CR>', opts) -- Remove all trailing whitespace

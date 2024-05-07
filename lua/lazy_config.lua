@@ -42,8 +42,8 @@ require("lazy").setup({
   { 'brenoprata10/nvim-highlight-colors', lazy = true, },                                     -- Color Highlights
   'nvim-pack/nvim-spectre',                                                                   -- Spectre (Find and Replace)
   { 'echasnovski/mini.nvim', version = false },                                               -- Mini (See plugin_config/mini.lua)
-  'petertriho/nvim-scrollbar',                                                                -- Scrollbar
   'lukas-reineke/virt-column.nvim',                                                           -- Change colorcolumns to line
+  'ramilito/winbar.nvim',                                                                     -- Top Bar on Each File
 
   -- Color Themes
   -- 'folke/tokyonight.nvim',                                                                    -- Tokoynight Theme
