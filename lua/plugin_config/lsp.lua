@@ -9,6 +9,7 @@ require("mason-lspconfig").setup({
     "eslint",
     "cssls",
     "emmet_language_server",
+    "marksman"
   }
 })
 
@@ -72,5 +73,9 @@ require("lspconfig").cssls.setup {
 }
 
 require("lspconfig").emmet_language_server.setup {
+  on_attach = on_attach
+}
+
+require("lspconfig").marksman.setup {
   on_attach = on_attach
 }

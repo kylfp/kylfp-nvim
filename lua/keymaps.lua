@@ -25,6 +25,11 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 keymap('n', '<leader>.', ':bnext<CR>', opts)
 keymap('n', '<leader>,', ':bprev<CR>', opts)
 
+-- Move Between Tabs
+keymap('n', '<C-t>', ':tabnew<CR>', opts)
+keymap('n', '<leader>>', ':+tabnext<CR>', opts)
+keymap('n', '<leader><', ':-tabnext<CR>', opts)
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
