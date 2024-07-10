@@ -22,7 +22,7 @@ vim.opt.cursorcolumn = true                -- highlight current column
 vim.opt.signcolumn = "yes"                 -- always show the sign column, other it would shift the text each time
 vim.opt.wrap = false                       -- get rid of line wrapping
 vim.opt.colorcolumn = "100"                -- Highlight column
-vim.opt.guifont = "mononoki_nerd_font:h10" -- font used in graphical neovim applications
+vim.opt.guifont = "JetBrainsMono_Nerd_Font:h10" -- font used in graphical neovim applications
 
 --Line Numbers
 vim.opt.number = true                      -- show numbered lines

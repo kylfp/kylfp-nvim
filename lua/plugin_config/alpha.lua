@@ -29,13 +29,12 @@ dashboard.section.header.val =
 -- menu navigation buttons
 dashboard.section.buttons.val =
 {
-  dashboard.button("1", "󰥨 | Find File", ":lua require('telescope.builtin').find_files(); print('> look up...')<CR>"),
-  dashboard.button("2", " | Recent Files", ":lua require('telescope.builtin').oldfiles(); print('> recent files...')<CR>"),
-  dashboard.button("3", " | New File", ":ene <BAR> startinsert<CR>"),
-  dashboard.button("4", "󱏒 | Tree", ":Triptych<cr>"),
-  dashboard.button("5", "󰒲 | Lazy", ":Lazy<CR>"),
-  dashboard.button("6", " | Mason", ":Mason<CR>"),
-  dashboard.button("7", "󰗼 | Exit", ":qa<CR>"),
+  dashboard.button('1', '󰥨 | Find File', ':lua require("fzf-lua").files()<CR>'),
+  dashboard.button('2', ' | Recent Files', ':lua require("fzf-lua").oldfiles()<CR>'),
+  dashboard.button("3", "󱏒 | Explore Files", ":lua MiniFiles.open()<CR>"),
+  dashboard.button("4", "󰒲 | Lazy", ":Lazy<CR>"),
+  dashboard.button("5", " | Mason", ":Mason<CR>"),
+  dashboard.button("6", "󰗼 | Exit", ":qa<CR>"),
 }
 
 -- menu footer

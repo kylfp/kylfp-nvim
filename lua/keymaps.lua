@@ -14,6 +14,12 @@ vim.g.maplocalleader = " "
 keymap("n", "<leader>w", "<Cmd>w<CR>", opts)    -- Write -> Space + w
 keymap("n", "<leader>jk", "<Cmd>Esc<CR>", opts)    -- Write -> Space + w
 keymap("n", "<leader>nh", "<Cmd>noh<CR>", opts) -- Remove Highlights -> Space + nh
+keymap("n", "<leader>md", ":set wrap<CR> <bar> :set linebreak<CR> <bar> :set spell<CR>", opts) -- Setup for writing with MD
+keymap("n", "<leader>mdx", ":set nowrap<CR> <bar> :set nolinebreak<CR> <bar> :set nospell<CR>", opts) -- Setup for writing with MD
+
+-- TERMINAL
+keymap('n', '<leader>t', ':terminal<CR>', opts)
+keymap('t', '<esc>', [[<C-\><C-n>]], opts)
 
 -- Move Between Windows
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -49,24 +55,31 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- PLUGINS
--- Telescope
-keymap("n", "<leader>1", ":Telescope find_files prompt_prefix=󰙅  hidden=true <CR>", opts)
-keymap("n", "<leader>2", ":Telescope buffers prompt_prefix=󱦞  hidden=true <CR>", opts)
-keymap("n", "<leader>8", ":Telescope live_grep prompt_prefix=󰭎  <CR>", opts)
-keymap("n", "<leader>0", ":Telescope current_buffer_fuzzy_find prompt_prefix=  <CR>", opts)
+-- LSP
+keymap('n', '<leader>ca', ':lua require("fzf-lua").lsp_code_actions()<CR>', opts)
+keymap('n', '<leader>R', ':JavaRunnerRunMain<CR>', opts)
+-- keymap('n', '<leader>gd', 'vim.lsp.buf.definition<CR>', opts)
+-- keymap('n', '<leader>gr', ':lua require("fzf-lua").lsp_references()<CR>', opts)
+-- keymap('n', '<leader>gd', ':lua require("fzf-lua").lsp_definitions()<CR>', opts)
+
+-- Fuzzy Finder
+keymap('n', '<leader>1', ':lua require("fzf-lua").files()<CR>', opts)
+keymap('n', '<leader>2', ':lua require("fzf-lua").buffers()<CR>', opts)
+keymap('n', '<leader>9', ':lua require("fzf-lua").grep_project()<CR>', opts)
+keymap('n', '<leader>0', ':lua require("fzf-lua").grep_curbuf()<CR>', opts)
 
 -- Highlight Colors
 keymap('n', '<leader>hc', ':HighlightColors Toggle<CR>', opts)
 
 -- Triptych
-keymap("n", "<leader>4", ':Triptych<CR>', opts)
+keymap('n', '<leader>3', ':lua MiniFiles.open()<CR>', opts)
 
 -- BufDel
 keymap('n', '<leader>q', ':BufDel<CR>', opts)
 
 -- Spectre
-keymap('n', '<leader>9', ':lua require("spectre").open_file_search()<CR>', opts)                  -- Search File General
-keymap('n', '<leader>7', ':lua require("spectre").toggle()<CR>', opts)                            -- Search Working Directory General
+-- keymap('n', '<leader>9', ':lua require("spectre").open_file_search()<CR>', opts)                  -- Search File General
+-- keymap('n', '<leader>7', ':lua require("spectre").toggle()<CR>', opts)                            -- Search Working Directory General
 
 -- Mini
 keymap('n', '<leader>T', ':lua MiniTrailspace.trim()<CR>', opts) -- Remove all trailing whitespace

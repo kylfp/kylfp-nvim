@@ -20,6 +20,7 @@ require("lazy").setup({
   'williamboman/mason.nvim',                                                                  -- LSP Manager
   'williamboman/mason-lspconfig.nvim',                                                        -- Mason -> LSP Config
   'neovim/nvim-lspconfig',                                                                    -- LSP Configuration Manager
+  'nvim-java/nvim-java',                                                                      -- Java Specific LSP/Setup
 
   -- Completion (Nvim CMP)
   'hrsh7th/nvim-cmp',                                                                         -- Completions
@@ -35,21 +36,19 @@ require("lazy").setup({
   -- General
   { 'nvim-treesitter/nvim-treesitter', build = ":TSUpdate" },                                 -- Treesitter
   { 'nvim-telescope/telescope.nvim', tag = '0.1.2', dependencies = 'nvim-lua/plenary.nvim' }, -- Telescope
-  'ojroques/nvim-bufdel',                                                                     -- Buffer Deletion
-  'nvim-lualine/lualine.nvim',                                                                -- Status line
-  { 'simonmclean/triptych.nvim', event = 'VeryLazy', },                                       -- Ranger Like Explorer
-  { 'goolord/alpha-nvim', dependencies = 'nvim-tree/nvim-web-devicons' },                     -- Greeter
+  'ibhagwan/fzf-lua',
   { 'brenoprata10/nvim-highlight-colors', lazy = true, },                                     -- Color Highlights
-  'nvim-pack/nvim-spectre',                                                                   -- Spectre (Find and Replace)
   { 'echasnovski/mini.nvim', version = false },                                               -- Mini (See plugin_config/mini.lua)
-  'lukas-reineke/virt-column.nvim',                                                           -- Change colorcolumns to line
-  'ramilito/winbar.nvim',                                                                     -- Top Bar on Each File
+  'nvim-lualine/lualine.nvim',                                                                -- Status line
+  { 'goolord/alpha-nvim', dependencies = 'nvim-tree/nvim-web-devicons' },                     -- Greeter
+  'ojroques/nvim-bufdel',                                                                     -- Buffer Deletion
 
   -- Color Themes
   -- 'folke/tokyonight.nvim',                                                                    -- Tokoynight Theme
   -- 'cryptomilk/nightcity.nvim',                                                                -- Nightcity Theme
-  -- 'catppuccin/nvim',                                                                          -- Catppuccin Theme
-  'navarasu/onedark.nvim',                                                                    -- Onedark Theme
+  { 'uloco/bluloco.nvim', lazy = false, priority = 1000, dependencies = 'rktjmp/lush.nvim', },
+  'catppuccin/nvim',                                                                          -- Catppuccin Theme
+  -- 'navarasu/onedark.nvim',                                                                    -- Onedark Theme
   -- 'Mofiqul/vscode.nvim',                                                                      -- VS Code Theme
   -- 'Shatur/neovim-ayu',                                                                        -- Ayu
   -- 'rebelot/kanagawa.nvim',                                                                    -- Kanagawa

@@ -5,7 +5,7 @@ end
 local filenameSettings = {
   'filename',
   symbols = {
-    modified = ' ',
+    modified = '  ',
     readonly = '󱓷 Only',
     -- NvimTree_1 = '󰙅 NvimTree',
     unnamed = '',
@@ -21,7 +21,7 @@ local bufferSettings = {
   },
   mode = 4,
   symbols = {
-    modified = ' '
+    modified = '  '
   }
 }
 
