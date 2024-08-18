@@ -20,7 +20,6 @@ require("lazy").setup({
   'williamboman/mason.nvim',                                                                  -- LSP Manager
   'williamboman/mason-lspconfig.nvim',                                                        -- Mason -> LSP Config
   'neovim/nvim-lspconfig',                                                                    -- LSP Configuration Manager
-  'nvim-java/nvim-java',                                                                      -- Java Specific LSP/Setup
 
   -- Completion (Nvim CMP)
   'hrsh7th/nvim-cmp',                                                                         -- Completions
