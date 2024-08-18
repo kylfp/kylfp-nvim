@@ -1,6 +1,5 @@
 require 'plugin_config.cmp'
 require 'plugin_config.lsp'
-require 'plugin_config.java'
 require 'plugin_config.colorhighlights'
 require 'plugin_config.mini'
 require 'plugin_config.alpha'
