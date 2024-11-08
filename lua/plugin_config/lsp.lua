@@ -3,7 +3,7 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
     "pylsp",
-    -- "jdtls",
+    "jdtls",
     "clangd",
     "tsserver",
     "eslint",
@@ -52,9 +52,9 @@ require("lspconfig").pylsp.setup {
   }
 }
 
--- require("lspconfig").jdtls.setup {
--- on_attach = on_attach
--- }
+require("lspconfig").jdtls.setup {
+  on_attach = on_attach
+}
 
 require("lspconfig").clangd.setup {
   on_attach = on_attach

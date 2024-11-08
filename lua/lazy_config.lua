@@ -45,9 +45,10 @@ require("lazy").setup({
   -- Color Themes
   -- 'folke/tokyonight.nvim',                                                                    -- Tokoynight Theme
   -- 'cryptomilk/nightcity.nvim',                                                                -- Nightcity Theme
-  { 'uloco/bluloco.nvim', lazy = false, priority = 1000, dependencies = 'rktjmp/lush.nvim', },
-  'catppuccin/nvim',                                                                          -- Catppuccin Theme
-  -- 'navarasu/onedark.nvim',                                                                    -- Onedark Theme
+  -- { 'uloco/bluloco.nvim', lazy = false, priority = 1000, dependencies = 'rktjmp/lush.nvim', },
+  -- 'catppuccin/nvim',                                                                          -- Catppuccin Theme
+  -- 'navarasu/onedark.nvim',                      https://discord.gg/KwHr8MBX?event=1304259733582254204                                              -- Onedark Theme
+  'mhartington/oceanic-next',
   -- 'Mofiqul/vscode.nvim',                                                                      -- VS Code Theme
   -- 'Shatur/neovim-ayu',                                                                        -- Ayu
   -- 'rebelot/kanagawa.nvim',                                                                    -- Kanagawa
