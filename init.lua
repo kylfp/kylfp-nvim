@@ -1,5 +1,3 @@
-require 'options'
-require 'keymaps'
-require 'lazy_config'
-require 'plugin_config'
-require 'theme_config'
+require('fattyre.core')
+require('fattyre.lazy')
+require("nvim-highlight-colors").turnOn()

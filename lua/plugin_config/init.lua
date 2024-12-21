@@ -1,7 +1,0 @@
-require 'plugin_config.cmp'
-require 'plugin_config.lsp'
-require 'plugin_config.colorhighlights'
-require 'plugin_config.mini'
-require 'plugin_config.alpha'
-require 'plugin_config.lualine'
-require 'plugin_config.fzf'
